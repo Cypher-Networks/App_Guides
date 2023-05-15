@@ -7,7 +7,7 @@ Wireshark is a network protocol analysis application which lets you see what's h
 -   QA engineers use it to _verify network applications_
 -   Developers use it to _debug protocol implementations_
 -   People use it to _learn network protocol_ internals
-![WireShark](../assets/images/wireshark_mainscreen.png)
+![WireShark](main/assets/images/wireshark_mainscreen.png)
 
 
 ## Filtering:
