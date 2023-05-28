@@ -34,10 +34,10 @@ A digital certificate is used for SSL/TLS encryption of HTTPS traffic. When view
 
 We can find this TLS handshake information within a PCAP file to identify what domain's the device has made contact with by filtering out all other information other than the TLS certificate by using "tls.handshake.type eq 11" will find any successful tls handshakes which have sent over their certifactes to the device found within the PCAP. 
 
-![TLS handshake example](blob/main/assets/images/tls_handshake.png)
+![TLS handshake example](assets/images/tls_handshake.png)
 
 By opening up the Transport Layer Security -> TLS -> Handshake Protocol -> Certificate -> signedCertificate you can view the who the issuer is and also what the domain name is by opening up the subject up. As shown in the below image which shows the fully expanded tree to gather the desired certifacte and the domain which the device has successfully connected to. 
-![TLS Certifacte example](blob/main/assets/images/tls_certificate_example.png)
+![TLS Certifacte example](assets/images/tls_certificate_example.png)
 
 You can also filter by certain TCP/UDP port to find more targeted set of information. tcp.port only looks at the TCP traffic and udp.port does exactly the same for UDP traffic. 
 ```
@@ -52,11 +52,11 @@ Filtering for only http traffic or ClientHello handshakes over TLS while also no
 ### Extracting files
 Once an analyst has access to a PCAP which has indications of a device which has downloaded a file from an unknown source they have the ability to extract any files seen within the PCAP by going to File -> Export Objects -> http. 
 
-![File Objects](blob/main/assets/images/fileObject.png)
+![File Objects](assets/images/fileObject.png)
 
 Once doing this a seperate window will pop-up which will look like the below. This will allow an analyst to see the file name, downloaded from, content type, size and packet number in which the download process started. 
 
-![HTTP files](blob/main/assets/images/httpfiles.png)
+![HTTP files](assets/images/httpfiles.png)
 
 
 ### Further resources on WireShark
